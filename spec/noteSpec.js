@@ -4,3 +4,10 @@ function testNotes() {
 };
 
 testNotes();
+
+function testReturnNotes() {
+  var returnNotes = new Note();
+  assert.isTrue(returnNotes.returnNotes === returnNotes.text, "Test: returnNotes returns the text when instantiated");
+};
+
+testReturnNotes();
