@@ -9,7 +9,8 @@ NoteList.prototype.returnAllNotes = function () {
 };
 
 NoteList.prototype.newNote = function (text) {
-  this.myNotes.push(new Note(text));
+  var note = new Note(text)
+  this.myNotes.push(note);
 };
 
   exports.NoteList = NoteList;
