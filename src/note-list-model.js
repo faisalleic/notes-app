@@ -1,16 +1,16 @@
 (function(exports){
 
 function NoteList() {
-  this.myNotes = []
+  this.list = []
 }
 
-NoteList.prototype.returnAllNotes = function () {
-  return this.myNotes;
+NoteList.prototype.showList = function () {
+  return this.list;
 };
 
-NoteList.prototype.newNote = function (text) {
+NoteList.prototype.createNote = function (text) {
   var note = new Note(text)
-  this.myNotes.push(note);
+  this.list.push(note);
 };
 
   exports.NoteList = NoteList;
